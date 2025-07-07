@@ -17,8 +17,6 @@ export const useFetch = <T>(
       const result = await fetchFuncton();
 
       setData(result);
-
-      reset();
     } catch (err) {
       setError(err instanceof Error ? err : new Error("An Error occurred"));
       console.log(err);
